@@ -1,7 +1,20 @@
 'use strict'
 
+var _ = require('lodash')
 var exists = require('existential')
 
-module.exports = function (value, defaultValue) {
-  return exists(value) ? value : defaultValue
+function isObject (arg) {
+  return typeof arg === 'object' && arg !== null
+}
+
+function existParam (target, source) {
+  return _.reduce(source, function (accumulator, value, key) {
+    if (!exists(target[key])) accumulator[key] = value
+    return accumulator
+  }, target)
+}
+
+module.exports = function (target, source) {
+  if (!isObject(target)) return exists(target) ? target : source
+  return existParam(target, source)
 }

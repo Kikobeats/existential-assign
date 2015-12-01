@@ -1,14 +1,21 @@
-existsDefault = require '..'
-should        = require 'should'
+existsAssign = require '..'
+should       = require 'should'
+objectAssign = require 'object-assign'
 
 describe 'existential default ::', ->
 
-  it 'when not exists add a value', ->
-    a = null
-    a = existsDefault(a, 'hello world')
-    a.should.eql 'hello world'
+  describe 'non object', ->
 
-  it 'when exists use the original value', ->
-    a = 'hello world'
-    a = existsDefault(a, 'foo')
-    a.should.eql 'hello world'
+    it 'resolve when not exists the value', ->
+      existsAssign(null, 'hello world').should.eql 'hello world'
+      existsAssign('hello world', 'foo').should.eql 'hello world'
+
+  describe 'object', ->
+
+    it 'added missing field', ->
+      expected = hello: 'world', foo: 'bar'
+      existsAssign({hello: 'world'}, foo: 'bar').should.be.eql expected
+
+    it  'dont overwrite a present field', ->
+      expected = hello: 'world'
+      existsAssign({hello: 'world'}, hello: 'foo').should.be.eql expected
