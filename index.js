@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-var exists = require('existential');
+var exists = require('existential')
 
-module.exports = function(value, defaultValue) {
-  return exists(value) ? value : defaultValue;
-};
+module.exports = function (value, defaultValue) {
+  return exists(value) ? value : defaultValue
+}
