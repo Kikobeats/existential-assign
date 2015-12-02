@@ -1,15 +1,26 @@
 {
   "name": "existential-assign",
   "description": "Check for the existential value of a variable/object. Assign one if the value doesn't exist.",
+  "homepage": "https://github.com/Kikobeats/existential-assign",
   "version": "0.0.0",
+  "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
+  "repository": "Kikobeats/existential-assign",
   "bugs": {
     "url": "https://github.com/Kikobeats/existential-assign/issues"
   },
+  "keywords": [
+    "assign",
+    "default",
+    "existence",
+    "existential",
+    "exists",
+    "operator"
+  ],
   "dependencies": {
     "existential": "latest",
     "lodash.reduce": "latest"
@@ -31,18 +42,8 @@
     "node": ">= 0.10.0",
     "npm": ">= 1.4.0"
   },
-  "homepage": "https://github.com/Kikobeats/existential-assign",
-  "keywords": [
-    "existential",
-    "operator",
-    "existence",
-    "exists",
-    "default"
-  ],
-  "license": "MIT",
-  "main": "./index.js",
-  "repository": "Kikobeats/existential-assign",
   "scripts": {
     "test": "sh test/test.sh"
-  }
+  },
+  "license": "MIT"
 }
