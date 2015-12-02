@@ -24,7 +24,7 @@
   "dependencies": {
     "existential": "latest",
     "lodash.clonedeep": "latest",
-    "lodash.merge": "latest",
+    "lodash.merge": "latest"
   },
   "devDependencies": {
     "browserify": "latest",
