@@ -29,14 +29,14 @@ var objt = {
 }
 
 existsAssign(defaults, objt)
-{
-  timeout: 3000,
-  cb: function() {},
-  user: {
-    name: 'Kiko Beats'
-    url: 'github.com'
-  }
-}
+// {
+//   timeout: 3000,
+//   cb: function() {},
+//   user: {
+//     name: 'Kiko Beats'
+//     url: 'github.com'
+//   }
+// }
 ```
 
 Notes that is *slightly* different than [`Object.assign`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
