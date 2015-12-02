@@ -1,14 +1,14 @@
 'use strict'
 
-var _ = require('lodash')
 var exists = require('existential')
+var reduce = require('lodash.reduce')
 
 function isObject (arg) {
   return typeof arg === 'object' && arg !== null
 }
 
 function existParam (target, source) {
-  return _.reduce(source, function (accumulator, value, key) {
+  return reduce(source, function (accumulator, value, key) {
     if (!exists(target[key])) accumulator[key] = value
     return accumulator
   }, target)
