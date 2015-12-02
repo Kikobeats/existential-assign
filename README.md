@@ -9,6 +9,38 @@
 
 > Check for the existential value of a variable/object. Assign one if the value doesn't exist.
 
+Very useful to setup a object with default values if the user preferences are empty. Works fine with deep objects:
+
+```js
+var defaults = {
+  timeout: 3000,
+  cb: function() {},
+  user: {
+    name: 'someone'
+    url: 'github.com'
+  }
+}
+
+var objt = {
+  user: {
+    name: 'Kiko Beats'
+    url: 'github.com'
+  }
+}
+
+existsAssign(defaults, objt)
+{
+  timeout: 3000,
+  cb: function() {},
+  user: {
+    name: 'Kiko Beats'
+    url: 'github.com'
+  }
+}
+```
+
+Notes that is *slightly* different than [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
+
 ## Install
 
 ```bash
@@ -38,27 +70,15 @@ var existsAssign = require('existential-assign');
 Working with something that is not a `Object`:
 
 ```js
-existsAssign(null, 'hello world'); // => 'hello world'
-existsAssign('hello', 'world'); // => 'hello'
+existsAssign('hello world', null); // => 'hello world'
+existsAssign('world', 'hello'); // => 'hello'
 ```
 
 Working with `Object`:
 
 ```js
-existsAssign(null, {hello: 'world'}) // => {hello: 'world'}
-existsAssign({hello: 'world'}, {hello: 'Aloha'}) // => {hello: 'world'}
-```
-
-Very useful to setup default values for a options `Object` prioritizing user preferences:
-
-```js
-function myFunction(opts) {
-  opts = existsAssign(opts, {
-    date: new Date(),
-    timeout: 3000,
-    cb: function() {}
-  })
-}
+existsAssign({hello: 'world'}, null) // => {hello: 'world'}
+existsAssign({hello: 'Aloha'}, {hello: 'world'}) // => {hello: 'world'}
 ```
 
 ## License
