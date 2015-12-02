@@ -39,7 +39,7 @@ existsAssign(defaults, objt)
 }
 ```
 
-Notes that is *slightly* different than [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
+Notes that is *slightly* different than [`Object.assign`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
 
 ## Install
 
