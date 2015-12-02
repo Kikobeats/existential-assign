@@ -24,17 +24,16 @@ module =
 
 banner = [
            "/**"
-           " * generator-git - Create the scaffolding for a new project."
-           " * @version v2.2.3"
-           " * @link    https://github.com/Kikobeats/generator-git"
-           " * @license MIT"
+           " * <%= pkg.name %> - <%= pkg.description %>"
+           " * @version v<%= pkg.version %>"
+           " * @link    <%= pkg.homepage %>"
+           " * @license <%= pkg.license %>"
            " */"].join("\n")
 
 # -- Tasks ---------------------------------------------------------------------
 
 gulp.task 'browserify', ->
-  browserify
-    extensions: ['.coffee', '.js']
+  browserify extensions: ['.coffee', '.js']
     .transform coffeeify
     .require(src.main, { expose: module.shortcut})
     .ignore('coffee-script')
