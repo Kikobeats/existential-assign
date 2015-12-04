@@ -1,6 +1,5 @@
 existsAssign = require '..'
 should       = require 'should'
-objectAssign = require 'object-assign'
 
 describe 'existential default ::', ->
 
