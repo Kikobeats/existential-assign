@@ -1,7 +1,18 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2015-12-04)
+
+
+* added inmutable test ([c670adc](https://github.com/kikobeats/existential-assign/commit/c670adc))
+* change merge dependency to reduce build size ([9ab51a7](https://github.com/kikobeats/existential-assign/commit/9ab51a7))
+* deleted unnecessary dependency ([f2c7f08](https://github.com/kikobeats/existential-assign/commit/f2c7f08))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2015-12-02)
 
 
+* 1.1.0 releases ([5c903f3](https://github.com/kikobeats/existential-assign/commit/5c903f3))
 * added deep support and same api as object.assign ([08e9dd6](https://github.com/kikobeats/existential-assign/commit/08e9dd6))
 * fixed ([440065a](https://github.com/kikobeats/existential-assign/commit/440065a))
 * Update README.md ([1a51aa5](https://github.com/kikobeats/existential-assign/commit/1a51aa5))
