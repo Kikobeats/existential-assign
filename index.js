@@ -1,8 +1,7 @@
 'use strict'
 
 var exists = require('existential')
-var merge = require('lodash.merge')
-var clone = require('lodash.clonedeep')
+var merge = require('deepmerge')
 
 function isObject (arg) {
   return typeof arg === 'object' && arg !== null
@@ -10,5 +9,5 @@ function isObject (arg) {
 
 module.exports = function (target, source) {
   if (!isObject(source)) return exists(source) ? source : target
-  return merge(clone(target), source)
+  return merge(target, source)
 }

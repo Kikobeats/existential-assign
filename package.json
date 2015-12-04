@@ -22,9 +22,8 @@
     "operator"
   ],
   "dependencies": {
-    "existential": "latest",
-    "lodash.clonedeep": "latest",
-    "lodash.merge": "latest"
+    "deepmerge": "latest",
+    "existential": "latest"
   },
   "devDependencies": {
     "browserify": "latest",
@@ -35,7 +34,6 @@
     "gulp-uglify": "latest",
     "gulp-util": "latest",
     "mocha": "latest",
-    "object-assign": "latest",
     "should": "latest",
     "vinyl-buffer": "latest",
     "vinyl-source-stream": "latest"
