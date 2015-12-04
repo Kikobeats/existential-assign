@@ -4,6 +4,24 @@ objectAssign = require 'object-assign'
 
 describe 'existential default ::', ->
 
+  describe 'behavior', ->
+    it "don't modify input values", ->
+      expected =
+        foo: 'bar'
+        hello: 'world'
+
+      value1 = hello: 'world'
+      value1Copy = hello: 'world'
+
+      value2 = foo: 'bar'
+      value2Copy = foo: 'bar'
+
+      result = existsAssign(value1, value2)
+
+      result.should.be.eql expected
+      value1.should.be.eql value1Copy
+      value2.should.be.eql value2Copy
+
   describe 'non object', ->
 
     it 'resolve when not exists the value', ->
