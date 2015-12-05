@@ -1,7 +1,17 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2015-12-05)
+
+
+* added examples section ([b827a0d](https://github.com/kikobeats/existential-assign/commit/b827a0d))
+* support more than one source ([a5f07b8](https://github.com/kikobeats/existential-assign/commit/a5f07b8))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2015-12-04)
 
 
+* 1.1.1 releases ([2e1e375](https://github.com/kikobeats/existential-assign/commit/2e1e375))
 * added inmutable test ([c670adc](https://github.com/kikobeats/existential-assign/commit/c670adc))
 * change merge dependency to reduce build size ([9ab51a7](https://github.com/kikobeats/existential-assign/commit/9ab51a7))
 * deleted unnecessary dependency ([f2c7f08](https://github.com/kikobeats/existential-assign/commit/f2c7f08))
