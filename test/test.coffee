@@ -21,6 +21,18 @@ describe 'existential default ::', ->
       value1.should.be.eql value1Copy
       value2.should.be.eql value2Copy
 
+    it 'works with more than one source', ->
+      existsAssign(null, undefined, 'hello world').should.be.equal 'hello world'
+      existsAssign(null, 'hello world', undefined).should.be.equal 'hello world'
+      existsAssign('hello world', null, undefined).should.be.equal 'hello world'
+      existsAssign('hello world', 'foo', 'bar').should.be.equal 'foo'
+
+      expected = hello: 'world', foo: 'bar', pokemon: 'digimon'
+      existsAssign({hello: 'world'}, {foo: 'bar'}, {pokemon: 'digimon'}).should.be.eql expected
+
+      expected = hello: 'bar', pokemon: 'digimon'
+      existsAssign({hello: 'world'}, {hello: 'bar'}, {pokemon: 'digimon'}).should.be.eql expected
+
   describe 'non object', ->
 
     it 'resolve when not exists the value', ->
