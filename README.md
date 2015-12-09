@@ -81,6 +81,18 @@ existsAssign({hello: 'world'}, null) // => {hello: 'world'}
 existsAssign({hello: 'Aloha'}, {hello: 'world'}) // => {hello: 'world'}
 ```
 
+You can provide more than one *source*:
+
+```js
+existsAssign({hello: 'world'}, null, undefined) // => {hello: 'world'}
+```
+
+It's equivalent to:
+
+```js
+existsAssign(existsAssign({hello: 'world'}, null), undefined) // => {hello: 'world'}
+```
+
 ## License
 
 MIT © [Kiko Beats](http://www.kikobeats.com)
