@@ -4,6 +4,7 @@ should       = require 'should'
 describe 'existential default ::', ->
 
   describe 'behavior', ->
+
     it "don't modify input values", ->
       expected =
         foo: 'bar'
@@ -20,6 +21,10 @@ describe 'existential default ::', ->
       result.should.be.eql expected
       value1.should.be.eql value1Copy
       value2.should.be.eql value2Copy
+
+    it 'works with one parameter', ->
+      existsAssign('hello world').should.be.equal 'hello world'
+      existsAssign(foo: 'bar').should.be.eql foo: 'bar'
 
     it 'works with more than one source', ->
       existsAssign(null, undefined, 'hello world').should.be.equal 'hello world'
