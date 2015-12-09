@@ -2,7 +2,7 @@
   "name": "existential-assign",
   "description": "Check for the existential value of a variable/object. Assign one if the value doesn't exist.",
   "homepage": "https://github.com/Kikobeats/existential-assign",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "./index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
