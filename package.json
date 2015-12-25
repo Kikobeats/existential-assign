@@ -22,8 +22,8 @@
     "operator"
   ],
   "dependencies": {
-    "deepmerge": "latest",
-    "existential": "latest"
+    "deepmerge": "~0.2.10",
+    "existential": "~1.0.3"
   },
   "devDependencies": {
     "browserify": "latest",
