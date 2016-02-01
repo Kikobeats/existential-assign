@@ -1,8 +1,17 @@
+<a name="1.2.4"></a>
+## 1.2.4 (2016-02-01)
+
+
+* delete unnecessary dep ([f1a1437](https://github.com/kikobeats/existential-assign/commit/f1a1437))
+
+
+
 <a name="1.2.3"></a>
 ## 1.2.3 (2016-02-01)
 
 
 * Fix bug related with undefined values ([84aa1b8](https://github.com/kikobeats/existential-assign/commit/84aa1b8))
+* Release 1.2.3 ([3a65df2](https://github.com/kikobeats/existential-assign/commit/3a65df2))
 * update bumped settings ([ea048cd](https://github.com/kikobeats/existential-assign/commit/ea048cd))
 
 
