@@ -1,8 +1,18 @@
+<a name="1.2.3"></a>
+## 1.2.3 (2016-02-01)
+
+
+* Fix bug related with undefined values ([84aa1b8](https://github.com/kikobeats/existential-assign/commit/84aa1b8))
+* update bumped settings ([ea048cd](https://github.com/kikobeats/existential-assign/commit/ea048cd))
+
+
+
 <a name="1.2.2"></a>
 ## 1.2.2 (2015-12-25)
 
 
 * Lock dependencies ([e57242c](https://github.com/kikobeats/existential-assign/commit/e57242c))
+* Release 1.2.2 ([77b9723](https://github.com/kikobeats/existential-assign/commit/77b9723))
 
 
 
