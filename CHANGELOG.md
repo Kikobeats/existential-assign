@@ -1,8 +1,24 @@
+<a name="1.2.5"></a>
+## 1.2.5 (2016-02-16)
+
+
+### chore
+
+* chore(package): update lodash.clonedeep to version 4.1.0 ([cbc5749](https://github.com/kikobeats/existential-assign/commit/cbc5749))
+* chore(package): update lodash.clonedeep to version 4.2.0 ([8d78513](https://github.com/kikobeats/existential-assign/commit/8d78513))
+
+* Merge pull request #2 from Kikobeats/greenkeeper-lodash.clonedeep-4.1.0 ([de60285](https://github.com/kikobeats/existential-assign/commit/de60285))
+* Merge pull request #4 from Kikobeats/greenkeeper-lodash.clonedeep-4.2.0 ([95e924d](https://github.com/kikobeats/existential-assign/commit/95e924d))
+* update lodash.merge dependency ([f193195](https://github.com/kikobeats/existential-assign/commit/f193195))
+
+
+
 <a name="1.2.4"></a>
 ## 1.2.4 (2016-02-01)
 
 
 * delete unnecessary dep ([f1a1437](https://github.com/kikobeats/existential-assign/commit/f1a1437))
+* Release 1.2.4 ([ba4cdf5](https://github.com/kikobeats/existential-assign/commit/ba4cdf5))
 
 
 
