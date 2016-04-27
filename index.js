@@ -2,10 +2,9 @@
 
 var exists = require('existential')
 var _merge = require('lodash.merge')
-var _clone = require('lodash.clonedeep')
 
 function merge (x, y) {
-  return _merge(_clone(x), y)
+  return _merge({}, x, y)
 }
 
 function isObject (arg) {
