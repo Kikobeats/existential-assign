@@ -39,6 +39,7 @@
     "lodash": "latest",
     "mocha": "latest",
     "should": "latest",
+    "standard": "latest",
     "vinyl-buffer": "latest",
     "vinyl-source-stream": "latest"
   },
@@ -46,6 +47,7 @@
     "node": ">= 0.10"
   },
   "scripts": {
+    "pretest": "standard index.js",
     "test": "mocha"
   },
   "license": "MIT"
