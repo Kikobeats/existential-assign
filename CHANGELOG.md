@@ -1,3 +1,15 @@
+<a name="1.3.0"></a>
+# 1.3.0 (2016-04-27)
+
+* Add pretest command ([d59d57a](https://github.com/kikobeats/existential-assign/commit/d59d57a))
+* Extend testing build ([84b21f1](https://github.com/kikobeats/existential-assign/commit/84b21f1))
+* Remove unnecessary dependency ([7f41311](https://github.com/kikobeats/existential-assign/commit/7f41311))
+* Update test command ([2ac4633](https://github.com/kikobeats/existential-assign/commit/2ac4633))
+* chore(package): update lodash.clonedeep to version 4.3.1 ([70ca4a2](https://github.com/kikobeats/existential-assign/commit/70ca4a2))
+* chore(package): update lodash.merge to version 4.3.0 ([ee100f4](https://github.com/kikobeats/existential-assign/commit/ee100f4))
+
+
+
 <a name="1.2.5"></a>
 ## 1.2.5 (2016-02-16)
 
