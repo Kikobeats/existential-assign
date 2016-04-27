@@ -1,3 +1,10 @@
+<a name="1.3.1"></a>
+## 1.3.1 (2016-04-27)
+
+* Perf improvement ([bf2733a](https://github.com/kikobeats/existential-assign/commit/bf2733a))
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2016-04-27)
 
