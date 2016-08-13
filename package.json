@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "existential": "~1.0.3",
-    "lodash.merge": "~4.5.0",
+    "lodash.merge": "~4.6.0",
     "sliced": "~1.0.1"
   },
   "devDependencies": {
