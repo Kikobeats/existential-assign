@@ -93,6 +93,12 @@ It's equivalent to:
 existsAssign(existsAssign({hello: 'world'}, null), undefined) // => {hello: 'world'}
 ```
 
+## Related
+
+* [existential](https://github.com/Kikobeats/existential) – The missing existential operator for JavaScript.
+* [existential-default](https://github.com/Kikobeats/existential-default) – Check for the existential value of a variable and assign a value by default. 
+* [existential-default-deep](https://github.com/Kikobeats/existential-default-deep) – Deep version of [existential-default](https://github.com/Kikobeats/existential-default).
+
 ## License
 
 MIT © [Kiko Beats](http://www.kikobeats.com)
